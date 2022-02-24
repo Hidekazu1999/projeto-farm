@@ -17,13 +17,13 @@ export class ClienteService {
   listar(): Observable<Cliente[]> {
     return this.httpClient.get<Cliente[]>(this.URL_CLIENTE);
   }
-  remover(id: String): Observable<object> {
+  remover(id: string): Observable<object> {
     return this.httpClient.delete(`${this.URL_CLIENTE}/${id}`)
   }
-  pesquisarPorID(id: String): Observable<Cliente> {
+  pesquisarPorID(id: string): Observable<Cliente> {
     return this.httpClient.get<Cliente>(`${this.URL_CLIENTE}/${id}`);
   }
   atualizar(cliente: Cliente): Observable<Cliente> {
-    return this.httpClient.put<Cliente>(`${this.URL_CLIENTE}/${cliente.codgrupo}`, cliente);
+    return this.httpClient.put<Cliente>(`${this.URL_CLIENTE}/${cliente.id}`, cliente);
   }
 }

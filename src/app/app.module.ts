@@ -4,24 +4,30 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
 import {CadastroModule} from "./components/cadastro/cadastro.module";
-import {CadastroClienteComponent} from "./components/cadastro/cadastro-cliente/cadastro-cliente.component";
 import {HttpClientModule} from "@angular/common/http";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {LayoutModule} from "./layout/layout.module";
+
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CadastroClienteComponent,
-
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        FormsModule,
-        CadastroModule,
-      HttpClientModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    CadastroModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    LayoutModule
+  ],
   providers: [],
+  exports: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

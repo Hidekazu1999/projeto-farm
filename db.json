@@ -4,41 +4,27 @@
       "id": "uT9JyK5",
       "codigo": "01",
       "nome": "Hidekazu Takayama",
-      "telefone": "(83) 98713-6804",
+      "telefone": "(83) 98713-6805",
       "email": "hidekazuhtcl@gmail.com",
       "codgrupo": "58111-085"
     },
     {
-      "nome": "Jhenny Kleysy",
-      "telefone": "+5583986680443",
-      "email": "kleysyjhenny@gmail.com",
-      "codgrupo": "55555555",
-      "id": "yH7JyL1"
-    },
-    {
-      "nome": "Cleide Constancio de Lima",
-      "email": "teste@gmail.com",
-      "telefone": "83987887452",
-      "codgrupo": "55555555",
-      "id": "d9PtTTk"
-    },
-    {
-      "nome": "JOSE CONSTANCIO DO REGO",
-      "email": "hidekazutakayama_lindo@hotmail.com",
-      "telefone": "+5583987137005",
+      "nome": "Teste",
+      "email": "teste@teste.com",
+      "telefone": "83988451355",
       "codgrupo": "58111-085",
-      "id": "2b8UL8b"
+      "id": "MPFPYzA"
     }
   ],
   "grupo": [
     {
       "codigogrupo": "58111-085",
-      "descricao": "Aaaaaa",
+      "descricao": "Produtos de Limpeza",
       "id": 1
     },
     {
       "codigogrupo": "55555555",
-      "descricao": "aaaaa",
+      "descricao": "Remédios Genéricos",
       "id": 2
     }
   ]

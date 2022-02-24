@@ -48,7 +48,7 @@ export class CadastroGruposComponent implements OnInit {
       this.grupoService.cadastrarGrupo(this.grupo).subscribe(
         clienteCadastrado =>  {
           console.log(clienteCadastrado)
-          this.roteador.navigate(['listagem-cliente'])
+          this.roteador.navigate(['listagem-grupo'])
         }
       );
 

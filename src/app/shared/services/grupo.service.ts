@@ -16,13 +16,13 @@ export class GrupoService {
   listar(): Observable<Grupo[]> {
     return this.httpClient.get<Grupo[]>(this.URL_GRUPO);
   }
-  remover(id: number): Observable<object> {
+  remover(id: string): Observable<object> {
     return this.httpClient.delete(`${this.URL_GRUPO}/${id}`)
   }
   pesquisarPorID(id: String): Observable<Grupo> {
     return this.httpClient.get<Grupo>(`${this.URL_GRUPO}/${id}`);
   }
   atualizar(grupo: Grupo): Observable<Grupo> {
-    return this.httpClient.put<Grupo>(`${this.URL_GRUPO}/${grupo.codigogrupo}`, grupo);
+    return this.httpClient.put<Grupo>(`${this.URL_GRUPO}/${grupo.id}`, grupo);
   }
 }

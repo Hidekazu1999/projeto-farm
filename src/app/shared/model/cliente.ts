@@ -1,8 +1,8 @@
 export class Cliente {
-  id?: string;
+  id!: string;
   codigo?: string;
-  nome?: string;
-  telefone?: string;
-  email?: string;
-  codgrupo?: string;
+  nome!: string;
+  telefone!: string;
+  email!: string;
+  codgrupo!: string;
 }
