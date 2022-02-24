@@ -12,6 +12,7 @@ export class ListagemGrupoComponent implements OnInit {
 
   grupo!: Grupo[];
   mostrarColunas = ['Id','Código','Descrição', 'Ações'];
+  filtro: string = '';
 
 
   constructor(private grupoService : GrupoService, private roteador: Router) { }

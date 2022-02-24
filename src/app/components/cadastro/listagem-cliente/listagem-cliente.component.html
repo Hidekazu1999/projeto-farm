@@ -3,7 +3,7 @@
   <div class="form-row align-items-center">
     <div class="col-sm-3 my-1">
       <label class="sr-only" >Pesquisar Cliente:</label>
-      <input class="form-control" type="text" name="search" />
+      <input class="form-control" type="text" name="search" [(ngModel)]="filtro"/>
       <!-- <input type="text" class="form-control" [(ngModel)]="filtro" placeholder="Search" (ngModelChange)='filtrar(filtro)'>
        <input type="text" class="form-control" id="inlineFormInputName" placeholder="Search" (keyup)="filtrar(inputFiltro.value)" #inputFiltro> -->
     </div>
@@ -24,7 +24,7 @@
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let clientes of cliente">
+  <tr *ngFor="let clientes of cliente | filter: filtro">
     <td>{{clientes.id}}</td>
     <td>{{clientes.nome}}</td>
     <td>{{clientes.telefone}}</td>

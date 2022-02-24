@@ -10,7 +10,8 @@ import {Router} from "@angular/router";
 })
 export class ListagemClienteComponent implements OnInit {
   cliente!: Cliente[];
-  mostrarColunas = ['Código','Nome', 'Telefone', 'Email'];
+  mostrarColunas = ['Código','Nome', 'Telefone', 'Email', 'Ações'];
+  filtro: string = '';
 
 
   constructor(private clienteService : ClienteService, private roteador: Router) { }
