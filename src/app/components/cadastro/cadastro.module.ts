@@ -10,6 +10,7 @@ import { ListagemGrupoComponent } from './listagem-grupo/listagem-grupo.componen
 import {NgOrderByPipeModule} from "angular-pipes";
 import {FilterPipeModule} from "ngx-filter-pipe";
 import {Ng2SearchPipeModule} from "ng2-search-filter";
+import {PipesModule} from "../../shared/pipes/pipes.module";
 
 
 
@@ -21,18 +22,17 @@ import {Ng2SearchPipeModule} from "ng2-search-filter";
     ListagemGrupoComponent
 
   ],
-  imports: [
-    CommonModule,
-    FormsModule,
-    RouterModule,
-    LayoutModule,
-    NgOrderByPipeModule,
-    Ng2SearchPipeModule
+    imports: [
+        CommonModule,
+        FormsModule,
+        RouterModule,
+        LayoutModule,
+        NgOrderByPipeModule,
+        Ng2SearchPipeModule,
+        PipesModule
 
 
-
-
-  ],
+    ],
   exports: [
     CadastroGruposComponent,
     ListagemClienteComponent,

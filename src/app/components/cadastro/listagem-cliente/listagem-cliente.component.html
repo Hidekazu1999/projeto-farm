@@ -28,7 +28,7 @@
   <tr *ngFor="let clientes of cliente | filter: filtro">
     <td>{{clientes.id}}</td>
     <td>{{clientes.nome}}</td>
-    <td>{{clientes.telefone}}</td>
+    <td>{{clientes.telefone | telefonePipe}}</td>
     <td>{{clientes.email}}</td>
     <td>
         <span class="float-right">

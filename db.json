@@ -14,6 +14,20 @@
       "telefone": "83988451355",
       "codgrupo": "58111-085",
       "id": "MPFPYzA"
+    },
+    {
+      "nome": "Maysa Tete",
+      "email": "teste@maysa.com",
+      "telefone": "11988475221",
+      "codgrupo": "58111-085",
+      "id": "ssVANP2"
+    },
+    {
+      "nome": "Edrey HK",
+      "email": "hk@teste.com",
+      "telefone": "56998452336",
+      "codgrupo": "1x254x87w",
+      "id": "_EVL-3t"
     }
   ],
   "grupo": [
@@ -26,6 +40,11 @@
       "codigogrupo": "55555555",
       "descricao": "Remédios Genéricos",
       "id": 2
+    },
+    {
+      "codigogrupo": "1x254x87w",
+      "descricao": "Produtos Inflamáveis ",
+      "id": 3
     }
   ]
 }
