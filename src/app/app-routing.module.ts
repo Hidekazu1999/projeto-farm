@@ -7,6 +7,11 @@ import {ListagemGrupoComponent} from "./components/cadastro/listagem-grupo/lista
 
 const routes: Routes = [
   {
+    path: '',
+    pathMatch: 'full',
+    component: ListagemClienteComponent
+  },
+  {
     path: 'cadastro-cliente',
     component: CadastroClienteComponent
   },
