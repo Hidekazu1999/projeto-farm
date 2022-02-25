@@ -19,7 +19,7 @@
       </div>
       <div class="card-body">
         <h5 class="card-title"></h5>
-        <a (click)="contadorGrupo()" class="btn btn-primary">Grupos</a>
+        <button (click)="contadorGrupo()" class="btn btn-primary">Grupos</button>
       </div>
     </div>
   </div>
@@ -30,7 +30,8 @@
         Grupos sem clientes
       </div>
       <div class="card-body">
-        <h5 class="card-title">Título especial</h5>
+        <h5 class="card-title"></h5>
+        <button (click)="GrupoSemCliente()" class="btn btn-primary">Grupos sem Clientes</button>
       </div>
     </div>
   </div>
@@ -40,7 +41,7 @@
   <div class="form-row align-items-center">
     <div class="col-sm-3 my-1">
       <label  for="exampleFormControlSelect10">Pesquisa Clientes por Grupo:</label>
-      <select [(ngModel)]="filtro" class="form-control"  id="exampleFormControlSelect10">
+      <select [(ngModel)]="filtro" [ngModelOptions]="{standalone: true}" class="form-control"  id="exampleFormControlSelect10">
         <option></option>
         <option *ngFor="let grupos of grupo">{{grupos.codigogrupo}}</option>
       </select>

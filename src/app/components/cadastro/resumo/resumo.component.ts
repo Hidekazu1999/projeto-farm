@@ -29,11 +29,18 @@ export class ResumoComponent implements OnInit {
   }
   contadorCliente(){
     var count = Object.keys(this.cliente).length;
-    console.log(count);
+    alert('Existem '+count+' Clientes');
   }
 
   contadorGrupo(){
     var count = Object.keys(this.grupo).length;
-    console.log(count);
+   alert('Existem '+count+' Grupos');
+  }
+
+  GrupoSemCliente(){
+    if ('' in this.grupo){
+      var count = Object.keys(this.grupo).length;
+      alert('Existem '+count +' sem Grupos');
+    };
   }
 }
