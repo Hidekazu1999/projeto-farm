@@ -8,9 +8,9 @@ import {CadastroClienteComponent} from "./cadastro-cliente/cadastro-cliente.comp
 import {LayoutModule} from "../../layout/layout.module";
 import { ListagemGrupoComponent } from './listagem-grupo/listagem-grupo.component';
 import {NgOrderByPipeModule} from "angular-pipes";
-import {FilterPipeModule} from "ngx-filter-pipe";
 import {Ng2SearchPipeModule} from "ng2-search-filter";
 import {PipesModule} from "../../shared/pipes/pipes.module";
+import { ResumoComponent } from './resumo/resumo.component';
 
 
 
@@ -19,7 +19,8 @@ import {PipesModule} from "../../shared/pipes/pipes.module";
     CadastroGruposComponent,
     ListagemClienteComponent,
     CadastroClienteComponent,
-    ListagemGrupoComponent
+    ListagemGrupoComponent,
+    ResumoComponent
 
   ],
     imports: [

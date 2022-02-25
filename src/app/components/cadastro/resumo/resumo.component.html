@@ -1,0 +1,68 @@
+<app-menu></app-menu>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-header">
+        Clientes
+      </div>
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <a (click)="contadorCliente()" class="btn btn-primary">Clientes</a>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-header">
+        Grupos
+      </div>
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <a (click)="contadorGrupo()" class="btn btn-primary">Grupos</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-header">
+        Grupos sem clientes
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Título especial</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<form style="margin-left: 15px">
+  <div class="form-row align-items-center">
+    <div class="col-sm-3 my-1">
+      <label  for="exampleFormControlSelect10">Pesquisa Clientes por Grupo:</label>
+      <select [(ngModel)]="filtro" class="form-control"  id="exampleFormControlSelect10">
+        <option></option>
+        <option *ngFor="let grupos of grupo">{{grupos.codigogrupo}}</option>
+      </select>
+
+    </div>
+  </div>
+</form>
+<table class="table table-hover" style="margin-left: 15px; margin-right: 15px">
+  <thead>
+  <tr>
+    <th *ngFor="let head of mostrarColunas" scope="col">{{head}}</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let clientes of cliente | filter: filtro">
+    <td>{{clientes.codgrupo}}</td>
+    <td>{{clientes.id}}</td>
+    <td>{{clientes.nome}}</td>
+    <td>{{clientes.telefone | telefonePipe}}</td>
+    <td>{{clientes.email}}</td>
+
+  </tr>
+  </tbody>
+</table>
+

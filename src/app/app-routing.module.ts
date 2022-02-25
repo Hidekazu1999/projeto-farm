@@ -4,6 +4,7 @@ import {CadastroClienteComponent} from "./components/cadastro/cadastro-cliente/c
 import {CadastroGruposComponent} from "./components/cadastro/cadastro-grupos/cadastro-grupos.component";
 import {ListagemClienteComponent} from "./components/cadastro/listagem-cliente/listagem-cliente.component";
 import {ListagemGrupoComponent} from "./components/cadastro/listagem-grupo/listagem-grupo.component";
+import {ResumoComponent} from "./components/cadastro/resumo/resumo.component";
 
 const routes: Routes = [
   {
@@ -34,6 +35,10 @@ const routes: Routes = [
   {
     path: 'cadastro-grupo/:id',
     component: CadastroGruposComponent
+  },
+  {
+    path: 'resumo',
+    component: ResumoComponent
   }
 
 ];
